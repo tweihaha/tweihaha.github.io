@@ -19,6 +19,8 @@ In 2015 I received my B.S. degree in [Electrical Engineering](web.ee.ntu.edu.tw)
 
 Previously, I was an iOS developer in [Moska Studio](http://www.moskastudio.tw/){:target="_blank"}, and a software intern in [Sentri Inc.](http://sentri.me/){:target="_blank"}
 
+#### This site is still under construction...
+
 
 <div class="lead lead-about">Research Interests
 </div>
