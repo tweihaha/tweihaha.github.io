@@ -1,0 +1,25 @@
+---
+layout: page
+title: Publications
+subtitle: Publications
+desc: publications.
+permalink: /publications/
+---
+
+<ul class="pub-list">
+  {% for year in site.data.pubs %}
+  <div class="lead lead-about">{{ year[0] }}
+    {% for pub in year[1] %}
+    <li class="pub">
+      <div class="pub-box">
+        <h4 class="pub-title">{{ pub.title }}</h4>
+        <p class="pub-desc">{{ pub.authors }}</p>
+        <p class="pub-desc">In {{ pub.publish }}, {{ pub.place }}, {{ pub.date }}.</p>
+      </div>
+    </li>
+    {% endfor %}
+  </div>
+  {% endfor %}
+</ul>
+<!-- post-list -->
+
