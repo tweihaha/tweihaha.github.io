@@ -116,12 +116,11 @@ First, let's see some plots of the successful results. *Blue line represents the
 <img class="frame-level-plot" src="/assets/img/aed-by-cnn/frame-level/189985_0.png">
 <img class="frame-level-plot" src="/assets/img/aed-by-cnn/frame-level/9674_1.png">
 <img class="frame-level-plot" src="/assets/img/aed-by-cnn/frame-level/135528_6.png">
-
 <img class="frame-level-plot" src="/assets/img/aed-by-cnn/frame-level/22347_3.png">
 <img class="frame-level-plot" src="/assets/img/aed-by-cnn/frame-level/104998_7.png">
 <img class="frame-level-plot" src="/assets/img/aed-by-cnn/frame-level/189989_0.png">
 </center>
-
+---
 
 However, there are still some flaws in the results. Take "children playing" (CP) for example, we expect the event to be a long continuous event, but our model *detected only the particularly loud parts, such as yelling and shouting, of children's sound*. Therefore, the frame-level results appear to be like this:
 
@@ -139,6 +138,8 @@ The same problem happens in "street music" (SM) as well:
 <img class="frame-level-plot" src="/assets/img/aed-by-cnn/frame-level/14385_9.png">
 </center>
 
+---
+
 Another problem occurs in "air conditioner" (AC). As mentioned in clip-level evaluation, many clips of AC *result in small predicted values* (smaller than 0.01 in the scale of 0~1). This problem leads to the following plots:
 
 <center>
@@ -155,6 +156,8 @@ Similarly, the problem sometimes also occurs in other classes:
 <img class="frame-level-plot" src="/assets/img/aed-by-cnn/frame-level/22973_3.png">
 </center>
 
+---
+
 Even though we have done data augmentation on volume, the model is still relatively weak at detecting background sound. In the following file, we can hear two dogs barking, one in the foreground and the other in the background. The model detected only the sounds from foreground dog.
 
 <img class="frame-level-plot" src="/assets/img/aed-by-cnn/frame-level/72261_3.png">
@@ -162,6 +165,8 @@ Even though we have done data augmentation on volume, the model is still relativ
   <source src="/assets/audio/aed-by-cnn/72261.wav" type="audio/wav">
   Your browser does not support the audio element.
 </audio>
+
+---
 
 In some examples, we found *wrong annotations*. As in 77927.wav, we detected a large amount of street music, but the ground truth only labeled several small dog barks.
 
