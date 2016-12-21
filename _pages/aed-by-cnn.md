@@ -89,7 +89,7 @@ This phenomenon only severely happened in AC, so we speculate that the AC class 
 
 ### Frame-level Result
 
-The overall area-under-ROC-curve (AUC) score of 0.738, and the AUC score of each class is shown below.
+The overall area-under-ROC-curve (AUC) score is 0.738, and the AUC score of each class is shown below.
 
 | Class            | AUC score     | Class            | AUC score     |
 | ---------------- | -------------:| ---------------- | -------------:|
@@ -140,7 +140,7 @@ The same problem happens in "street music" (SM) as well:
 
 ---
 
-Another problem occurs in "air conditioner" (AC). As mentioned in clip-level evaluation, many clips of AC *result in small predicted values* (smaller than 0.01 in the scale of 0~1). This problem leads to the following plots:
+Another problem occurs in "air conditioner" (AC). As mentioned in the clip-level evaluation, many clips of AC *result in small predicted values* (lower than 0.01 in the scale of 0~1). This problem leads to the following plots:
 
 <center>
 <img class="frame-level-plot" src="/assets/img/aed-by-cnn/frame-level/83502_0.png">
@@ -168,7 +168,7 @@ Even though we have done data augmentation on volume, the model is still relativ
 
 ---
 
-In some examples, we found *wrong annotations*. As in 77927.wav, we detected a large amount of street music, but the ground truth only labeled several small dog barks.
+In some examples, we found *wrong annotations*. As in 77927.wav, we detected a significant amount of street music, but the ground truth only labeled several small dog barks.
 
 <img class="frame-level-all" style="width: 60%;" src="/assets/img/aed-by-cnn/frame-level/77927.png">
 <audio controls>
