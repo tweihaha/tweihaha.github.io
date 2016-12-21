@@ -231,3 +231,15 @@ p.pub-desc {
     border-radius: 50%
   }
 }
+
+// PAGE AED-BY-CNN ===============================
+
+.frame-level-plot {
+  width: 45%;
+}
+
+@include mq-up(md) {
+  .frame-level-plot {
+    width: 30%;
+  }
+}

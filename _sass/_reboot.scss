@@ -272,6 +272,8 @@ input[type="month"] {
 }
 
 table {
+  margin: 5px;
+  margin-bottom: 25px;
   border-collapse: collapse;
   background-color: transparent;
 }
@@ -285,5 +287,16 @@ caption {
 }
 
 th {
+  padding: 5px;
+  border-style: solid;
+  border-width: 1px;
   text-align: left;
 }
+
+td {
+  padding: 5px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+

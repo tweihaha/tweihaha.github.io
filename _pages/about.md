@@ -1,23 +1,19 @@
 ---
 layout: page
 title: About
-subtitle: I am a smart heading.
+subtitle: About
 desc: About me.
 permalink: /about/
 ---
 
 <div class="pretty-links">
 
-<div class="lead lead-about">Some intro text that is eye catching and should put you reader at ease and confident in your skills.
+<div class="lead lead-about">Contact
 </div>
 
-{::nomarkdown} 
-<figure class="site-profile">
-    <img src="{{ site.baseurl }}/assets/img/Ting-Wei_Su.jpg">
-</figure>
-{:/}
+<img style="width: 30%;" src="/assets/img/email.png">
 
-Neve aethere orbe hic *virginis trunco* in spreto diuque latarumque, mea? Ultima
+<!-- Neve aethere orbe hic *virginis trunco* in spreto diuque latarumque, mea? Ultima
 sulcum antris conlapsosque potiere curvat Phasias superas adpulit vertex est
 Elei est fumificisque, puniceo? Et dulcis me Argo precibus: haec blanditiae
 [candida](http://murmure.org/.html).
@@ -72,7 +68,7 @@ quid solent **semper** corporis quoque Alcmene terra!
 Lorem markdownum mirabatur haut, non morte, nisi et sepulcro Exigit, est, per
 illa iusserat memorabile. Pater damus multa, in lucosque carent oculis adsum
 miseris. Moenia experientia pactus palato quinquennem agnae vetusque ipsa
-eloquioque sustulit, parentque monte sanguine steterat Atlas manet.
+eloquioque sustulit, parentque monte sanguine steterat Atlas manet. -->
 
 </div>
 
