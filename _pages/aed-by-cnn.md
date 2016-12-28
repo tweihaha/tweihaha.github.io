@@ -17,6 +17,7 @@ If AED is applied to surveillance cameras and home security devices, they can al
 Special purposes of SED also include classification of [breath and snore](http://ieeexplore.ieee.org/document/7471670/){:target="_blank"}, [urban sounds](https://wp.nyu.edu/sonyc/){:target="_blank"}, and [animal species](https://wp.nyu.edu/birdvox/){:target="_blank"}.
 
 More information about AED:
+
 - [Sound Event Detection written by Toni Heittola](http://www.cs.tut.fi/~heittolt/research-sound-event-detection){:target="_blank"}
 - [DCASE2016](http://www.cs.tut.fi/sgn/arg/dcase2016/task-sound-event-detection-in-real-life-audio){:target="_blank"}
 - [IEEE/ACM TASLP Special Issue on Sound Scene and Event Analysis](https://signalprocessingsociety.org/blog/ieeeacm-taslp-special-issue-sound-scene-and-event-analysis){:target="_blank"}
