@@ -16,7 +16,7 @@ For example, when multimedia files are uploaded to a website, we can automatical
 If AED is applied to surveillance cameras and home security devices, they can alert us when abnormal sound events such as screaming, shouting, or gun-shots occur.
 Special purposes of SED also include classification of [breath and snore](http://ieeexplore.ieee.org/document/7471670/){:target="_blank"}, [urban sounds](https://wp.nyu.edu/sonyc/){:target="_blank"}, and [animal species](https://wp.nyu.edu/birdvox/){:target="_blank"}.
 
-<!-- More information about AED: -->
+More information about AED:
 
 - [Sound Event Detection written by Toni Heittola](http://www.cs.tut.fi/~heittolt/research-sound-event-detection){:target="_blank"}
 - [DCASE2016](http://www.cs.tut.fi/sgn/arg/dcase2016/task-sound-event-detection-in-real-life-audio){:target="_blank"}
@@ -51,6 +51,7 @@ Another problem is that **the target sounds may vary in amplitude significantly 
 Thus, we do data augmentation by adding and reducing 5db to the volume of every clip. As a result, we get triple training data and should make the model less sensitive to the effect of diverse volume.
 
 Related work of WSL:
+
 - [Audio Event Detection using Weakly Labeled Data](https://arxiv.org/abs/1605.02401){:target="_blank"}
 - [Event Localization in Music Auto-tagging](https://github.com/ciaua/clip2frame){:target="_blank"}
 - [Weakly Supervised Object Recognition with Convolutional Neural Networks](http://www.di.ens.fr/willow/research/weakcnn/){:target="_blank"}
