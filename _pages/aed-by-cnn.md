@@ -5,52 +5,106 @@ permalink: research/aed-by-cnn/
 subtitle: Weakly Supervised Learning on Audio Event Detection
 ---
 
-This page is a description of the following paper:
+Audio event detection aims at discovering the sound elements inside an audio clip. 
+In this topic, we try to discover not only **the sound events happened in an audio clip** (clip-level information) but also **the temporal positions of the detected sounds** (frame-level information). 
+Since creating frame-level annotated data can be extremely time-consuming, we proposed a model based on **convolutional neural networks** that relies on **data with only clip-level labels (weakly supervised data) for training**. However, the model is still able to find out the frame-level information inside every audio clip.
+
+### Usage of Audio Event Detection
+
+Audio event detection (AED), or sound event detection (SED), can be used in many scenarios. 
+For example, when multimedia files are uploaded to a website, we can automatically recognize its contents by analyzing the audio. 
+If AED is applied to surveillance cameras and home security devices, they can alert us when abnormal sound events such as screaming, shouting, or gun-shots occur.
+Special purposes of SED also include classification of [breath and snore](http://ieeexplore.ieee.org/document/7471670/){:target="_blank"}, [urban sounds](https://wp.nyu.edu/sonyc/){:target="_blank"}, and [animal species](https://wp.nyu.edu/birdvox/){:target="_blank"}.
+
+More information about AED:
+- [Sound Event Detection written by Toni Heittola](http://www.cs.tut.fi/~heittolt/research-sound-event-detection){:target="_blank"}
+- [DCASE2016](http://www.cs.tut.fi/sgn/arg/dcase2016/task-sound-event-detection-in-real-life-audio){:target="_blank"}
+- [IEEE/ACM TASLP Special Issue on Sound Scene and Event Analysis](https://signalprocessingsociety.org/blog/ieeeacm-taslp-special-issue-sound-scene-and-event-analysis){:target="_blank"}
+
+### Weakly Supervised Learning (WSL)
+
+In our case, weakly supervised learning means to use some noisier data to train our model. 
+These data may **contain several sounds that appear simultaneously**, may **have louder background noise**, may **be long and redundant (the target sounds show up in only a small portion of each clip)**, etc. 
+Thus, in addition to searching for the appearance of the sound events, we have to find their locations as well.
+
+#### Why WSL?
+
+Conventionally, we train models with data containing *only* and *clearly* the labeled sound, which we consider as *fully supervised data*. 
+However, such richly annotated data are generally hard to come by, and producing them can be very time-consuming. 
+Additionally, in many cases, multiple audio events may occur at the same time, making it harder to collect pure and clean training data. 
+The difficulty grows even higher when we try to scale up the number of sound classes.
+
+On online platforms like Freesound, there are a lot of audio clips tagged with specific events. 
+However, instead of being omnipresent, the events may appear for a short period of time in a clip.
+Moreover, we do not even know the location of those events. 
+If we can train a competitive model with these weakly supervised clips, our training data can be easily expanded.
+
+#### Difficulties of WSL
+
+**The primary difficulty of WSL is to locate the training targets.** 
+To solve this problem, we create a fully convolutional neural networks (FCN) and apply a global pooling layer at the end of the model. 
+With a global pooling layer, the model can select the most potential segment to be a final clip-level prediction.
+It is still possible that the model picks wrong targets, but we believe it can reduce erroneous selection with more training data.
+
+Another problem is that **the target sounds may vary in amplitude significantly between training clips**.
+Thus, we do data augmentation by adding and reducing 5db to the volume of every clip. As a result, we get triple training data and should make the model less sensitive to the effect of diverse volume.
+
+Related work of WSL:
+- [Audio Event Detection using Weakly Labeled Data](https://arxiv.org/abs/1605.02401){:target="_blank"}
+- [Event Localization in Music Auto-tagging](https://github.com/ciaua/clip2frame){:target="_blank"}
+- [Weakly Supervised Object Recognition with Convolutional Neural Networks](http://www.di.ens.fr/willow/research/weakcnn/){:target="_blank"}
+
+**For more detail about our current model, please check out our paper!**
+
+---
+
+The following content demonstrates the result of our paper:
 
 T.-W. Su, J.-Y. Liu, Y.-H. Yang, **Weakly-Supervised Audio Event Detection using Event-Specific Gaussian Filters and Fully Convolutional Networks**, in proceedings of *the IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)*, New Orleans, USA. March, 2017
-<!-- In this topic, we try to discover not only **the sound events happened in an audio clip** (clip-level information) but also **the temporal positions of the detected sounds** (frame-level information). Since creating frame-level annotated data can be extremely time-consuming, we proposed a model based on **convolutional neural networks** that relies on **data with only clip-level labels (weakly supervised data) for training**.
+
+<!-- 
  -->
 
 ### Abstract
 
-Audio event detection aims at **discovering the elements inside an audio clip**. 
-In addition to labeling the clips with the audio events, we want to **find out the temporal locations of these events**. 
-However, creating clearly annotated training data can be very time-consuming. 
-Therefore, we provide a model based on **convolutional neural networks** that relies only on **weakly supervised data for training**. 
-These data can be directly obtained from online platforms, such as Freesound, with the clip-level labels assigned by the uploaders. 
+Audio event detection aims at discovering the elements inside an audio clip. 
+In addition to labeling the clips with the audio events, we want to find out the temporal locations of these events. 
+However, creating clearly annotated training data can be time-consuming. 
+Therefore, we provide a model based on convolutional neural networks that relies only on weakly-supervised data for training. 
+These data can be directly obtained from online platforms, such as [Freesound](http://freesound.org/){:target="_blank"}, with the clip-level labels assigned by the uploaders. 
 The structure of our model is extended to a **fully convolutional networks**, and an **event-specific Gaussian filter layer** is designed to advance its learning ability. 
 Besides, this model is able to detect frame-level information, e.g., the temporal position of sounds, even when it is trained merely with clip-level labels.
 
 ### Datasets
 
-Our model is trained with **[UrbanSound](https://serv.cusp.nyu.edu/projects/urbansounddataset/urbansound.html) Dataset (US)**. We tested our clip-level result on [UrbanSound8K](https://serv.cusp.nyu.edu/projects/urbansounddataset/urbansound8k.html) Dataset (8K) and frame-level result on US. We used ten-folded cross-validation for testing. There are totally 1302 files in US and 8732 files in 8K.
+Our model is trained with **[UrbanSound](https://serv.cusp.nyu.edu/projects/urbansounddataset/urbansound.html){:target="_blank"} Dataset (US)**. We tested our clip-level result on [UrbanSound8K](https://serv.cusp.nyu.edu/projects/urbansounddataset/urbansound8k.html){:target="_blank"} Dataset (8K) and frame-level result on US. We used ten-folded cross-validation for testing. There are totally 1302 files in US and 8732 files in 8K.
 
-| Class            | # of Data (US)      | # of Data (8K) | 
-| ---------------- | -------------------:| -------------------:| 
-| Air conditioner  | 64                  | 1000                |
-| Car horn         | 125                 | 429                 |
-| Children playing | 158                 | 1000                |
-| Dog bark         | 337                 | 1000                |
-| Drilling         | 119                 | 1000                |
-| Engine idling    | 97                  | 1000                |
-| Gun shot         | 117                 | 347                 |
-| Jackhammer       | 45                  | 1000                |
-| Siren            | 74                  | 929                 |
-| Street music     | 166                 | 1000                |
-| **Total**        | **1302**            | **8732**            |
+| Class            | # of Data (US)  | # of Data (8K) | 
+| ---------------- | ---------------:| --------------:| 
+| Air conditioner  | 64              | 1000           |
+| Car horn         | 125             | 429            |
+| Children playing | 158             | 1000           |
+| Dog bark         | 337             | 1000           |
+| Drilling         | 119             | 1000           |
+| Engine idling    | 97              | 1000           |
+| Gun shot         | 117             | 347            |
+| Jackhammer       | 45              | 1000           |
+| Siren            | 74              | 929            |
+| Street music     | 166             | 1000           |
+| **Total**        | **1302**        | **8732**       |
 
 
 ### Evaluation Settings
 
-**Input data: log-melspectrogram and its delta**
+#### Input features
 
-#### Log-melspectrogram:
+**Log-melspectrogram**:
 - Sampling rate: 44100Hz
 - Window size of STFT: [1024, 4096, 16384] for multi-scale
 - Hop size of STFT: 512
 - Number of Mel bands: 128
 
-#### Delta:
+**Delta**:
 - Width to compute: 9
 - The order of the difference operator: 1
 

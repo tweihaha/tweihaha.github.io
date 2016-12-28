@@ -24,7 +24,7 @@ Previously, I was an iOS developer in [Moska Studio](http://www.moskastudio.tw/)
 
 <div class="lead lead-about">Research Interests
 </div>
-- Machine listening
+- Machine Listening
 - Music Information Retrieval
 - Machine Learning
 - Audio Signal Processing
