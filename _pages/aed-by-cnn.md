@@ -62,7 +62,7 @@ Related work of WSL:
 
 The following content demonstrates the result of our paper:
 
-T.-W. Su, J.-Y. Liu, Y.-H. Yang, **Weakly-Supervised Audio Event Detection using Event-Specific Gaussian Filters and Fully Convolutional Networks**, in proceedings of *the IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)*, New Orleans, USA. March, 2017
+T.-W. Su, J.-Y. Liu, Y.-H. Yang, **Weakly-Supervised Audio Event Detection using Event-Specific Gaussian Filters and Fully Convolutional Networks**, in proceedings of *the IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)*, New Orleans, USA. March, 2017. [\[PDF\]](/publications/icassp2017wsl-aed.pdf){:target="_blank"}
 
 <!-- 
  -->

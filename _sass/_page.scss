@@ -152,7 +152,7 @@ p.post-desc {
   color: $body-color;
 }
 
-p.pub-desc {
+p.pub-desc, a.pub-desc {
   font-size: 1rem;
   margin-bottom: $spacer0;
   margin-top: -$spacer0;

@@ -2,12 +2,12 @@
 	"2017": 
 	[
 		{
-		"id" : "icassp2017aed",
+		"id" : "icassp2017wsl-aed",
 		"title" : "Weakly-Supervised Audio Event Detection using Event-Specific Gaussian Filters and Fully Convolutional Networks",
 		"authors" : "T.-W. Su, J.-Y. Liu, Y.-H. Yang",
 		"publish" : "IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
 		"place" : "New Orleans, USA",
-		"date" : "March 2017",
+		"date" : "March 2017"
 		},
 	],
 }
