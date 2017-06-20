@@ -3,11 +3,9 @@
 # Site settings
 title: Ting-Wei               # used for the html title of every page
 desc: >
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  It is the personal website of Ting-Wei Su.
 
-url: http://jackal.com      # put your website hosting url here
+url: https://tweihaha.github.io      # put your website hosting url here
 baseurl: ''                 # the subpath of your site, e.g. /blog
 permalink: /:year/:title/   # how should we display posts url
 
