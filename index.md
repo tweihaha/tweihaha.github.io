@@ -13,7 +13,7 @@ layout: default
 I am a master's student at [CCRMA](https://ccrma.stanford.edu/){:target="_blank"} of [Stanford University](https://www.stanford.edu/){:target="_blank"}.
 In 2015 I received my B.S. degree in [Electrical Engineering](https://web.ee.ntu.edu.tw/){:target="_blank"} from [National Taiwan University](http://www.ntu.edu.tw){:target="_blank"}. 
 
-Previously, I was a research assistant at the [Music and Audio Computing Lab](http://mac.citi.sinica.edu.tw){:target="_blank"} of [Academia Sinica](https://www.sinica.edu.tw){:target="_blank"}.
+Before I came to the states, I was a research assistant at the [Music and Audio Computing Lab](http://mac.citi.sinica.edu.tw){:target="_blank"} of [Academia Sinica](https://www.sinica.edu.tw){:target="_blank"}.
 
 <!-- #### This site is still under construction... -->
 
