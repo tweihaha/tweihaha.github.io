@@ -17,6 +17,8 @@ To start the game, snap your fingers, the nearer to the microphone the better. O
 
 You'll see eight planets appear on the screen. Most of them have different colors, which means they will be resonated by different frequencies. When they are resonated, they will also be attracted by the blackhole in the middle of the screen. If they stay there too long, they will be absorbed. To generate the frequency, try to yell, sing, whistle, or make some noise to your microphone. If you are tired yelling at it, try to press 's', 'd', 'f', 'g', 'h', 'j', 'k', and 'l' button on your keyboard.
 
+<img width="60%" src="/assets/img/univ-freq/univfreq2.png">
+
 Here is a brief demo video.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IaR2Zt4MLNY" frameborder="0" allowfullscreen></iframe>
