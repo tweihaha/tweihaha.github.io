@@ -10,7 +10,7 @@ layout: default
 </figure>
 {:/}
 
-I am a master's student at [CCRMA](https://ccrma.stanford.edu/){:target="_blank"} of [Stanford University](https://www.stanford.edu/){:target="_blank"}.
+I am a Master's student at [CCRMA](https://ccrma.stanford.edu/){:target="_blank"} of [Stanford University](https://www.stanford.edu/){:target="_blank"}.
 In 2015 I received my B.S. degree in [Electrical Engineering](https://web.ee.ntu.edu.tw/){:target="_blank"} from [National Taiwan University](http://www.ntu.edu.tw){:target="_blank"}. 
 
 Before coming to the states, I was a research assistant at the [Music and Audio Computing Lab](http://mac.citi.sinica.edu.tw){:target="_blank"} of [Academia Sinica](https://www.sinica.edu.tw){:target="_blank"}.

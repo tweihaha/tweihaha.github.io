@@ -5,6 +5,8 @@ permalink: research/aed-by-cnn/
 subtitle: Weakly Supervised Learning on Audio Event Detection
 ---
 
+*March, 2017*
+
 Audio event detection aims at discovering the sound elements inside an audio clip. 
 In this topic, we try to discover not only **the sound events happened in an audio clip** (clip-level information) but also **the temporal positions of the detected sounds** (frame-level information). 
 Since creating frame-level annotated data can be extremely time-consuming, we proposed a model based on **convolutional neural networks** that relies on **data with only clip-level labels (weakly supervised data) for training**. However, the model is still able to find out the frame-level information inside every audio clip.
