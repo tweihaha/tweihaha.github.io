@@ -7,6 +7,8 @@ subtitle: Universe of Frequency
 
 It is an universe controlled by frequency. Every planet will be attracted by a specific frequency. You have to use the corresponding frequencies to attract and absorb the planets. 
 
+This is the homework of MUSIC 256A (CS 476A) at Stanford University.
+
 ### Collect All the Planets!
 
 <img width="60%" src="/assets/img/univ-freq/univfreq.png">
