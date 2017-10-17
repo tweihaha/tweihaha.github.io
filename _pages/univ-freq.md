@@ -30,8 +30,8 @@ Here is a brief demo video.
 ### Technical Issues
 
 - This program is powered by RtAudio, OpenGL, and ChucK, and the code was written in C++.
-- The collisions between the planets are elastic collisions, and the gravity of blackhole is created using Newton's law of universal gravitation. (Sorry, there is no gravity between the planets in this world.)
-- Since this program will not only read the input voice, but also generate some sounds, I have to deal with the feedback. My approach is to close the output volume of audio input when generating sounds (using envolope in ChucK file), and vice versa.
+- The collisions between the planets are elastic collisions, and the gravity of black hole is created using Newton's law of universal gravitation. (Sorry, there is no gravity between the planets in this world.)
+- Since this program will not only read the input voice, but also generate some sounds, I have to deal with the feedback. My approach is to close the output volume of audio input when generating sounds (using envelope in ChucK file), and vice versa.
 - In this program, I also have to detect the dominating (or main) frequency of all time. I select the two highest peaks and convert their frequencies into the corresponding pitch notes (C, D, E, F, etc. ). For example, 440Hz and 220Hz will be converted to A, 262Hz and 131Hz will be converted to C. The highest peak will be weighted by 2 units, and the second by 1. Then, in 20 consecutive buffers, if the pitch note with highest value is more than 40 units, it will be chosen as the main frequency.
 - The color of the background stars will change according to the main frequency.
 
