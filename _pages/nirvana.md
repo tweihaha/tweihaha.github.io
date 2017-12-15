@@ -26,7 +26,9 @@ Every realm has its own trap that you need to beware of. For example, Naraka (He
 
 <img width="60%" src="/assets/img/nirvana/10.png">
 
-As for the purpose of this game, I wouldn't expect the players to know more about Buddhism. Instead, just have some fun with it! (It's a game end in itself! lol)
+The game chooses to "light up lighthouses" because what Buddhism talks about is "enlightment". Therefore, in this game you not only escape from the world but also "lighting up" and "harmonize" the world.
+
+As for the purpose of this game, I wouldn't expect the players to know more about Buddhism. Instead, just have some fun with it!
 
 
 ### Technical Issues
