@@ -6,12 +6,27 @@ desc: Course Projects
 permalink: /projects/
 ---
 
-<p>Here are some of my projects.</p>
-
 <div class="projects">
-  <div class="grid no-gutters">
-    
+  {% assign m = site.data.proj.size | minus:1 | divided_by:3 %}
+  {% for i in (0..m) %}
+  <div class="grid">
+    {% for j in (0..2) %}
+    {% assign k = i | times:3 | plus:j %}
+    {% if k < site.data.proj.size %}
+    {% assign project = site.data.proj[k] %}
     <div class="unit one-third">
+      <div class="project">
+        <h4 class="project-title"><a href="{{ project.href }}/">{{ project.title }}</a></h4>
+        <img src="/assets/img/{{ project.img_src }}">
+        <p>{{ project.description }}</p>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div><!-- grid -->
+  {% endfor %}
+
+    <!-- <div class="unit one-third">
       <div class="project">
         <h4 class="project-title"><a href="cupcake-fac/">The Cupcake Sequencer</a></h4>
         <img src="/assets/img/cupcake-fac/1.png">
@@ -35,16 +50,12 @@ permalink: /projects/
       </div>
     </div>
 
-  </div><!-- grid -->
-  <div class="grid no-gutters">
-    
     <div class="unit one-third">
       <div class="project">
         <h4 class="project-title"><a href="nirvana/">Nirvana</a></h4>
         <img src="/assets/img/nirvana/1.png">
         <p>In the world of Buddhism, there are six realms. All creatures are going to reincarnate into one of the realms after they die according to what they did in the past. However, for those souls who have reached Nirvana, they don't have to suffer from this pain of reincarnation.</p>
       </div>
-    </div>
+    </div> -->
 
-  </div>
 </div>

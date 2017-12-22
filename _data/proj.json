@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Nirvana",
+        "href": "nirvana",
+        "img_src": "nirvana/1.png",
+        "description": "In the world of Buddhism, there are six realms. All creatures are going to reincarnate into one of the realms after they die according to what they did in the past. However, for those souls who have reached Nirvana, they don't have to suffer from this pain of reincarnation.",
+    },
+    {
+        "title": "The Cupcake Sequencer",
+        "href": "cupcake-fac",
+        "img_src": "cupcake-fac/1.png",
+        "description": "It is a mixture of a cupcake factory and a sequencer. This factory not only produces cupcakes, but it also produces SCHWIFTY sounds! Let's get schwifty! This project is powered by Unity.",
+    },
+    {
+        "title": "Universe of Frequency",
+        "href": "univ-freq",
+        "img_src": "univ-freq/univfreq.png",
+        "description": "It is an universe controlled by frequency. Every planet will be attracted by a specific frequency. You have to use certain frequency to attract and absorb the balls.",
+    },
+    {
+        "title": "Rolling Pong",
+        "href": "rollingpong",
+        "img_src": "rollingpong/rollingpong.png",
+        "description": "Imagine that you are balancing a <strong>ping pong ball</strong> on a surface. You have to stop the ball at certain points in order to score. Controlling the ball is already a difficult task. Unfortunately, your naughty friends are trying to keep you from scoring! What should you do?",
+    },
+
+]
