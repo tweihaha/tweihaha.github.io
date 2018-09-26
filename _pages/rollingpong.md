@@ -59,3 +59,8 @@ There are three types of stages, Fire Pong, Pac Pong, and Boss Pong.
 
 - The maps are created using a technique called **bitmap transformation**. We generate an image, and each pixel on the image represents a particular item that will be placed on the map. We use different colors for computers to distinguish among various kinds of items. (Like the figure on the right.)
 
+### Authors
+
+Developers: Hao-Wei Luan, Ting-Wei Su, and Hsiang-Hua Hsieh
+
+Art Designer: Chih-Mei, Wang
