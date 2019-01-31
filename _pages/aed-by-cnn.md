@@ -219,7 +219,7 @@ Similarly, the problem sometimes also occurs in other classes:
 Even though we have done data augmentation on volume, the model is still relatively weak at detecting background sound. In the following file, we can hear two dogs barking, one in the foreground and the other in the background. The model detected only the sounds from foreground dog.
 
 <img class="frame-level-plot" src="/assets/img/aed-by-cnn/frame-level/72261_3.png">
-<audio controls>
+<audio controls controlsList="nodownload">
   <source src="/assets/audio/aed-by-cnn/72261.wav" type="audio/wav">
   Your browser does not support the audio element.
 </audio>
@@ -229,7 +229,7 @@ Even though we have done data augmentation on volume, the model is still relativ
 In some examples, we found *wrong annotations*. As in 77927.wav, we detected a significant amount of street music, but the ground truth only labeled several small dog barks.
 
 <img class="frame-level-all" style="width: 60%;" src="/assets/img/aed-by-cnn/frame-level/77927.png">
-<audio controls>
+<audio controls controlsList="nodownload">
   <source src="/assets/audio/aed-by-cnn/77927.mp3" type="audio/mp3">
   Your browser does not support the audio element.
 </audio>
@@ -237,7 +237,7 @@ In some examples, we found *wrong annotations*. As in 77927.wav, we detected a s
 The same error appears in 106905.aif. While the ground truth is engine idling, we can still hear the siren and street music.
 
 <img class="frame-level-all" style="width: 60%;" src="/assets/img/aed-by-cnn/frame-level/106905.png">
-<audio controls>
+<audio controls controlsList="nodownload">
   <source src="/assets/audio/aed-by-cnn/106905.mp3" type="audio/mp3">
   Your browser does not support the audio element.
 </audio>
