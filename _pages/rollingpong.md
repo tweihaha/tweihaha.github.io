@@ -63,4 +63,6 @@ There are three types of stages, Fire Pong, Pac Pong, and Boss Pong.
 
 Developers: Hao-Wei Luan, Ting-Wei Su, and Hsiang-Hua Hsieh
 
-Art Designer: Chih-Mei, Wang
+Art Designer: Chih-Mei Wang
+
+Music and Sound Composer: Ting-Wei Su
