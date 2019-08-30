@@ -10,15 +10,14 @@ layout: default
 </figure>
 {:/}
 
-I am a Master's student at [CCRMA](https://ccrma.stanford.edu/){:target="_blank"} of [Stanford University](https://www.stanford.edu/){:target="_blank"}.
-In 2015 I received my B.S. degree in [Electrical Engineering](https://web.ee.ntu.edu.tw/){:target="_blank"} from [National Taiwan University](http://www.ntu.edu.tw){:target="_blank"}. 
+I am a software engineer working on audio system for real-time video streaming service. I received my Master's degree from [CCRMA](https://ccrma.stanford.edu/){:target="_blank"}, [Stanford University](https://www.stanford.edu/){:target="_blank"} and a Bachelor's degree in [Electrical Engineering](https://web.ee.ntu.edu.tw/){:target="_blank"} from [National Taiwan University](http://www.ntu.edu.tw){:target="_blank"}. 
 
-Before coming to the states, I was a research assistant at the [Music and Audio Computing Lab](http://mac.citi.sinica.edu.tw){:target="_blank"} of [Academia Sinica](https://www.sinica.edu.tw){:target="_blank"}.
+I was a research assistant at the [Music and Artificial Intelligence Lab](https://musicai.citi.sinica.edu.tw/){:target="_blank"} of [Academia Sinica](https://www.sinica.edu.tw){:target="_blank"}.
 
 <!-- #### This site is still under construction... -->
 
 
-<div class="lead lead-about">Research Interests
+<div class="lead lead-about">Interests
 </div>
 - Machine Listening
 - Music Information Retrieval

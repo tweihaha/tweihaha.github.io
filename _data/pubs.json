@@ -1,13 +1,40 @@
 {
+	"2019": 
+	[
+		{
+		"title" : "TENT: Technique-Embedded Note Tracking for Real-World Guitar Solo Recordings",
+		"type" : "Journal",
+		"authors" : "T.-W. Su, Y.-P. Chen, L. Su, Y.-H. Yang",
+		"publish" : "Transactions of the International Society for Music Information Retrieval, 2(1), pp.15–28.",
+		"date" : "July 2019",
+		"url" : "https://transactions.ismir.net/articles/10.5334/tismir.23"
+		},
+	],
+
+	"2018": 
+	[
+		{
+		"title" : "Generating Images from Audio",
+		"type" : "Conference Workshop",
+		"authors" : "T.-W. Su*, C. W. Lin*",
+		"publish" : "NeurIPS (NIPS) Workshop on Machine Learning for Creativity and Design",
+		"place" : "Montreal, Canada",
+		"date" : "December 2018",
+		"url" : "https://nips2018creativity.github.io/doc/Generating_Images_from_Audio.pdf"
+		},
+	],
+
 	"2017": 
 	[
 		{
 		"id" : "icassp2017wsl-aed",
+		"type" : "Conference",
 		"title" : "Weakly-Supervised Audio Event Detection using Event-Specific Gaussian Filters and Fully Convolutional Networks",
 		"authors" : "T.-W. Su, J.-Y. Liu, Y.-H. Yang",
 		"publish" : "IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
 		"place" : "New Orleans, USA",
-		"date" : "March 2017"
+		"date" : "March 2017",
+		"url" : "https://ieeexplore.ieee.org/document/7952264"
 		},
 	],
 }
