@@ -10,7 +10,7 @@ layout: default
 </figure>
 {:/}
 
-I am a software engineer working on audio system for real-time video streaming service. I received my Master's degree from [CCRMA](https://ccrma.stanford.edu/){:target="_blank"}, [Stanford University](https://www.stanford.edu/){:target="_blank"} and a Bachelor's degree in [Electrical Engineering](https://web.ee.ntu.edu.tw/){:target="_blank"} from [National Taiwan University](http://www.ntu.edu.tw){:target="_blank"}. 
+I am a software engineer working on audio systems and audio applications. I received my Master's degree from [CCRMA](https://ccrma.stanford.edu/){:target="_blank"}, [Stanford University](https://www.stanford.edu/){:target="_blank"} and a Bachelor's degree in [Electrical Engineering](https://web.ee.ntu.edu.tw/){:target="_blank"} from [National Taiwan University](http://www.ntu.edu.tw){:target="_blank"}. 
 
 I was a research assistant at the [Music and Artificial Intelligence Lab](https://musicai.citi.sinica.edu.tw/){:target="_blank"} of [Academia Sinica](https://www.sinica.edu.tw){:target="_blank"}.
 
